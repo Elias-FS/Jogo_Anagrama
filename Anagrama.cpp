@@ -67,7 +67,7 @@ void Cabecalho()
     cout<<"\n\t\t> 3 - 6 tentativas erradas o jogo termina.";
     cout<<"\n\t\t> 4 - Ignore a acentuacao e palavras no plural.\n";
 
-    cout << "\n\t\tJogue e veja em qual nível você está!";
+    cout << "\n\t\tJogue e veja em qual nivel voce esta!";
     cout << "\n\t\tINICIANTE / INTERMEDIARIO / AVANÇADO / LENDARIO";
     
     cout<<"\n\n B O A    S O R T E ! ! !";

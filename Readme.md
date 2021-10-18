@@ -2,8 +2,6 @@
 <h1> JOGO ANAGRAMA <h1>
 </div>
 
-##
-
 <body>
     Jogo anagrama desenvolvido em c++.
     
@@ -15,4 +13,9 @@
 
         Jogue e veja em qual nível você está!
     INICIANTE (5 acertos) / INTERMEDIARIO (10 acertos) / AVANÇADO (20 acertos) / LENDARIO (29 acertos)
+
+
+    Imagens do jogo em funcionamento:
+
+        <img align="center" alt="Tela_Menu" height="40" width="50" src="C:\1Projetos\Cpp\Anagrama\imgs">
 </body>
