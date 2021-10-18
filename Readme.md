@@ -17,5 +17,5 @@
 
     Imagens do jogo em funcionamento:
 
-        <img align="center" alt="Tela_Menu" height="40" width="50" src="C:\1Projetos\Cpp\Anagrama\imgs">
+        <img src="Tela_menu.png" alt="some text" width=60 height=40>
 </body>
