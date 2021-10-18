@@ -1,9 +1,9 @@
 <div>
-# JOGO ANAGRAMA 
+<h1> JOGO ANAGRAMA </h1>
 </div>
 
 <body>
-    ## Jogo anagrama desenvolvido em c++.
+    Jogo anagrama desenvolvido em c++.
     
         Regras:
             1 - Forme palavras com as letras do quadro.
