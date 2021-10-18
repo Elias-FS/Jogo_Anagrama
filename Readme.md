@@ -17,5 +17,6 @@
 
     Imagens do jogo em funcionamento:
 
-        <img src="Tela_menu.png" alt="some text" width=60 height=40>
+        ![Tela_menu](https://user-images.githubusercontent.com/80833558/137792166-18a5d995-1c83-48a7-bcf4-8ebf98e6696e.png)
+
 </body>
