@@ -67,7 +67,7 @@ void Cabecalho()
     cout<<"\n\t\t> 3 - 6 tentativas erradas o jogo termina.";
     cout<<"\n\t\t> 4 - Ignore a acentuacao e palavras no plural.\n";
 
-    cout << "\n\t\tJogue e veja em qual nivel voce esta!";
+    cout << "\n\t\tJogue e veja em qual nível você está!";
     cout << "\n\t\tINICIANTE / INTERMEDIARIO / AVANÇADO / LENDARIO";
     
     cout<<"\n\n B O A    S O R T E ! ! !";
@@ -122,18 +122,20 @@ void Banco_de_Palavras()
       {
         cout << setiosflags(ios::left) << setw(10) << palavras[i][j];
       }
-      cout<<"\n\n";
+      cout<<"\n";
     }
 }
 
 ///Verificacao de acertos
 void Verifica_Palavra()
 {
+  string sair = "0";
   char digitado[10];
+  char digitadoOk[30];
   bool vd;
   int erros = 0, acertos = 0, i;
   string palavrasAc[30];
-  string palavras[30] = {"BOTA", "DADO","LARANJA", "SACO","DEDO",
+  string palavras[30]= {"BOTA", "DADO","LARANJA", "SACO","DEDO",
                          "BOLA","CASA","CASCO","VASO","OBRA",
                          "ARTE","UVA","CAO","SAPO","SABAO",
                          "TATU","COR","SOL","LUA","PAVE",
@@ -144,12 +146,46 @@ void Verifica_Palavra()
   while (erros <= 5 && acertos <= 29)
   {
     system("clear||cls");
+    if (erros == 5)
+        {
+          cout << "\n!!! SE ERRAR MAIS UMA VEZ, VOCE PERDERA E SERA REDIRECIONADO PARA O INICIO !!!\n\n";
+        }
+    if ( 5 <= acertos && acertos <= 9 )
+    {
+      cout << "\t" << acertos << " ACERTOS!! Voce atingiu o nivel: INICIANTE";
+    }
+      if (10 <= acertos && acertos <= 19)
+      {
+        cout << "\t" << acertos << " ACERTOS!! Voce atingiu o nivel: INTERMEDIARIO";
+      }
+      if (20 <= acertos && acertos <= 28)
+      {
+        cout << "\t" << acertos << " ACERTOS!! Voce atingiu o nivel: AVANÇADO";
+      }
+      if (acertos == 29)
+      {
+        cout << "\t" << acertos << " ACERTOS!! >>> LENDÁRIO !! SE ACERTAR A ULTIMA PALAVRA, VOCÊ VENCERA O JOGO E SERA REDIRECIONADO PARA O INÍCIO, PODENDO VER TAMBEM O BANCO DE PALAVRAS DO JOGO <<<";
+      }
+    cout<<"\n\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#\n";
+    cout<<"\n\t\t\t   BANCO DE ACERTOS\n\n";
+    for(int x = 0; x<30; x++)
+    {
+      cout<<"\t ";
+      cout << palavrasAc[x];
+    }
+    cout<<"\n\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#\n";
     cout << "\n\n";
     Quadro_Letras();
     vd = false;
     cout<<"\n\t>>> Acertos (" << acertos << " de 30) e Erros (" << erros << " de 5)\n";
+    cout << "\n\tDigite '0' para voltar ao menu.";
     cout << "\n\tDigite a palavra encontrada: ";
     cin >> digitado;
+
+    if (digitado == sair)
+    {
+      break;
+    }
     
     for (i = 0; i < 30; i++)
     {
@@ -158,39 +194,23 @@ void Verifica_Palavra()
 
     for(i=0; i<30; i++)
     {
+      
       if (digitado == palavras[i] && digitado != palavrasAc[i])
       {
         acertos++;
-        cout << ">>>Acertou a palavra " << palavras[i] << "<<<";
-        palavrasAc[i] = palavras[i];
+        cout << ">>>Acertou a palavra " << palavras[i] << "<<<\n";
+        
+        palavrasAc[i] = digitado;
         vd = true;
-
-        if (acertos == 5)
-        {
-          cout << "\t5 ACERTOS!! Voce atingiu o nivel: INICIANTE";
-        }
-        if (acertos == 10)
-        {
-          cout << "\t10 ACERTOS!! Voce atingiu o nivel: INTERMEDIARIO";
-        }
-        if (acertos == 20)
-        {
-          cout << "\t20 ACERTOS!! Voce atingiu o nivel: AVANÇADO";
-        }
-        if (acertos == 29)
-        {
-          cout << "\t>>> LENDÁRIO !! SE ACERTAR A ULTIMA PALAVRA, VOCÊ VENCERA O JOGO E SERA REDIRECIONADO PARA O INÍCIO, PODENDO VER TAMBEM O BANCO DE PALAVRAS DO JOGO <<<";
-        }
       }
     } 
     if (vd == false)
     {
       erros++; 
       vd = false;
-      if (erros == 5)
-        {
-          cout << "\n!!! SE ERRAR MAIS UMA VEZ, VOCE PERDERA E SERA REDIRECIONADO PARA O INICIO !!!";
-        }
+      
     }
-  }
+
+
+  }  
 }
