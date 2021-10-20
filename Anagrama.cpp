@@ -58,25 +58,25 @@ int main ()
 ///Cabeçalho do programa
 void Cabecalho()
 {
-    cout<<"=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#";
-    cout<<"\n J O G O   A N A G R A M A";
-    
-    cout<<"\n\n\t Regras: ";
-    cout<<"\n\t\t> 1 - Forme palavras com as letras do quadro.";
-    cout<<"\n\t\t> 2 - Total de 30 palavras.";
-    cout<<"\n\t\t> 3 - 6 tentativas erradas o jogo termina.";
-    cout<<"\n\t\t> 4 - Ignore a acentuacao e palavras no plural.\n";
-
-    cout << "\n\t\tJogue e veja em qual nível você está!";
-    cout << "\n\t\tINICIANTE / INTERMEDIARIO / AVANÇADO / LENDARIO";
-    
-    cout<<"\n\n B O A    S O R T E ! ! !";
-    cout<<"\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#\n";
-        cout << "\nM E N U   D E   O P C O E S\n\n";
-        cout << "\t\t(1) - Iniciar jogo\n";
-        cout << "\t\t(2) - Mostrar banco de palavras\n";
-        cout << "\t\t(0) - Sair do programa\n";
-    cout<<"\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#\n";
+        cout<<"=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=";
+    cout<<"\n|\t\t J O G O   A N A G R A M A\t\t\t\t|";
+    cout<<"\n|\t\t\t\t\t\t\t\t\t|";
+    cout<<"\n|\t Regras: \t\t\t\t\t\t\t|";
+    cout<<"\n|\t\t> 1 - Forme palavras com as letras do quadro.\t\t|";
+    cout<<"\n|\t\t> 2 - Total de 30 palavras.\t\t\t\t|";
+    cout<<"\n|\t\t> 3 - 6 tentativas erradas o jogo termina.\t\t|";
+    cout<<"\n|\t\t> 4 - Ignore a acentuacao e palavras no plural.\t\t|";
+    cout<<"\n|\t\t\t\t\t\t\t\t\t|";
+    cout << "\n|\t\tJogue e veja em qual nivel voce esta!\t\t\t|";
+    cout << "\n|\t\tINICIANTE | INTERMEDIARIO | AVANCADO | LENDARIO\t\t|";
+    cout<<"\n|\t\t\t\t\t\t\t\t\t|";
+    cout<<"\n|\t\t\t\t\t\t\t\t\t|\n|\t\t B O A    S O R T E ! ! !\t\t\t\t|";
+    cout<<"\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=\n";
+        cout << "|\t\t\t\t\t\t\t\t\t|\n|\t\t M E N U   D E   O P C O E S\t\t\t\t|\n|\t\t\t\t\t\t\t\t\t|\n";
+        cout << "|\t\t(1) - Iniciar jogo\t\t\t\t\t|\n";
+        cout << "|\t\t(2) - Mostrar banco de palavras\t\t\t\t|\n";
+        cout << "|\t\t(0) - Sair do programa\t\t\t\t\t|\n|\t\t\t\t\t\t\t\t\t|";
+    cout<<"\n=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=\n";
 }
 
 
